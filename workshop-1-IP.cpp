@@ -52,12 +52,11 @@ int main(){
     }while(option!=0);
     
     return 0;
-    //Nota: debo traducir los enunciados de cada punto.
 }
 
 void firstPoint(){
-    /*Escriba un programa que lea tres notas de un alumno y
-    calcule la nota final de dicho alumno.*/
+    /*Statement: write a program that reads three grades from a student and
+    calculates that student's final grade.*/
         
     double gradeOne=0.0, gradeTwo=0.0, gradeThree=0.0, finalGrade=0.0;
         
@@ -68,7 +67,7 @@ void firstPoint(){
     cout<<"Digite su tercera nota: ";
     cin>>gradeThree;
 
-    if(0.0<=gradeOne<=5.0 && 0.0<=gradeTwo<=5.0 && 0.0<=gradeThree<=5.0){
+    if(gradeOne<=5.0 && gradeTwo<=5.0 && gradeThree<=5.0 && 0.0<=gradeOne && 0.0<=gradeTwo && 0.0<=gradeThree){
         
         finalGrade=(gradeOne+gradeTwo+gradeThree)/3;
         cout<<"\nSu nota final es: "<<finalGrade<<endl;
@@ -77,29 +76,23 @@ void firstPoint(){
         cout<<"\nLas notas no estan en el rango valido [0.0 - 5.0], digitelas de nuevo."<<endl;
         firstPoint();
     }
-    
-
-    
-    //Nota: el rango de las notas tiene que ir entre 1.0 y 5.0.
 }
     
 void secondPoint(){
-    /*La calificación final de un estudiante es la media
-    ponderada de tres notas: la nota de prácticas que
-    cuenta con un 30% del total, la nota teórica que cuenta
-    con un 60% y la nota de participación que cuenta con
-    el 10% restante. Escriba un programa que lea de la
-    entrada estándar las tres notas de un alumno y escriba
-    en la salida su nota final. Se debe indicar
-    por pantalla cual nota se debe ingresar (Practica, teórica y participación) y mostrar el
-    nombre del alumno y la nota final.*/
+    /*Statement: a student's final grade is the weighted average of three grades: the 
+    practical grade, which accounts for 30% of the total, the theoretical 
+    grade, which accounts for 60%, and the participation grade, which accounts
+    for the remaining 10%. Write a program that reads a student's three grades 
+    from the standard input and writes their final grade as output. 
+    The screen should indicate which grade to enter (practical, theoretical, 
+    and participation) and display the student's name and final grade.*/
     
     string studentName="";
     double practicalGrade=0.0, theoricalGrade=0.0, participationGrade=0.0, finalGrade=0.0;
         
     cout<<"Digite su nombre: ";
-    cin>>studentName;
     fflush(stdin);
+    getline(cin, studentName);
     
     cout<<"\nDigite su nota de practica: ";
     cin>>practicalGrade;
@@ -108,19 +101,23 @@ void secondPoint(){
     cout<<"Digite su nota de participacion: ";
     cin>>participationGrade;
     
-    finalGrade=(practicalGrade*0.3)+(theoricalGrade*0.6)+(participationGrade*0.1);
-    
-    cout<<"\nNombre del alumno: "<<studentName<<endl;
-    cout<<"Nota final: "<<finalGrade<<endl;
-    
-    //Nota: el rango de las notas tiene que ir entre 1.0 y 5.0.
-    //Nota: no me deja escribir el nombre completo (no toma los espacios).
+
+    if(practicalGrade<=5.0 && theoricalGrade<=5.0 && participationGrade<=5.0 && 0.0<=practicalGrade && 0.0<=theoricalGrade && 0.0<=participationGrade){
+        
+        finalGrade=(practicalGrade*0.3)+(theoricalGrade*0.6)+(participationGrade*0.1);
+        cout<<"\nNombre del alumno: "<<studentName<<endl;
+        cout<<"Nota final: "<<finalGrade<<endl;
+    }else{
+
+        cout<<"\nLas notas no estan en el rango valido [0.0 - 5.0], digitelas de nuevo."<<endl;
+        secondPoint();
+    }
 }
     
 void thirdPoint(){
-    /*Escriba un programa que lea de la entrada estándar los
-    dos catetos de un triángulo rectángulo y escriba en la
-    salida estándar su hipotenusa.*/
+    /*Statement: write a program that reads the two legs of a right
+    triangle from standard input and writes its 
+    hypotenuse to standard output.*/
     
     double firstLeg=0.0, secondLeg=0.0, hypotenuse=0.0;
 
@@ -141,19 +138,19 @@ void thirdPoint(){
 }
     
 void fourthPoint(){
-    /*Se requiere implementar una calculadora con la siguiente operación suma, resta, división,
-    multiplicación, potencia y raíz. Para cada operación aritmética el programa debe solicitar
-    dos números enteros. Y mostrar en pantalla un cuadro de la siguiente manera. Cabe
-    aclarar que la raíz cuadrada solicita solo un número entero.*/
+    /*Statement: a calculator needs to be implemented with the following operations: addition, 
+    subtraction, division, multiplication, exponentiation, and root. For each 
+    arithmetic operation, the program must request two integers. It should be 
+    noted that the square root requests only one integer.*/
 
     int calculatorOption=-1;
-    double firstAddend=0.0, secondAddend=0.0;
-    double minuend=0.0, subtrahend=0.0;
-    double firstFactor=0.0, secondFactor=0.0;
-    double dividend=0.0, divisor=0.0;
-    double base=0.0, exponent=0.0;
-    double radicand=0.0;
-    double result=0.0;
+    int firstAddend=0, secondAddend=0;
+    int minuend=0, subtrahend=0;
+    int firstFactor=0, secondFactor=0;
+    int dividend=0, divisor=0;
+    int base=0, exponent=0;
+    int radicand=0;    
+    int result=0;
 
     do{
         cout<<"=====Calculadora====="<<endl;
