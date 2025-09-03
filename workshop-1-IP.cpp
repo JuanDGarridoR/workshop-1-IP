@@ -18,7 +18,7 @@ calcule la nota final de dicho alumno.*/
 
     cout<<"Su nota final es: "<<finalGrade<<endl;
 
-    //Nota: el rango de las notas tiene que ir entre 1.0 y 5.0
+    //Nota: el rango de las notas tiene que ir entre 1.0 y 5.0.
 }
 
 void secondPoint(){
@@ -32,6 +32,25 @@ en la salida su nota final. Se debe indicar
 por pantalla cual nota se debe ingresar (Practica, teórica y participación) y mostrar el
 nombre del alumno y la nota final.*/
 
+    string studentName;
+    float practicalGrade, theoricalGrade, participationGrade, finalGrade;
+    
+    cout<<"Digite su nombre: ";
+    cin>>studentName;
+    cout<<"Digite su nota de practica: ";
+    cin>>practicalGrade;
+    cout<<"Digite su nota teorica: ";
+    cin>>theoricalGrade;
+    cout<<"Digite su nota de participacion: ";
+    cin>>participationGrade;
+
+    finalGrade=(practicalGrade*0.3)+(theoricalGrade*0.6)+(participationGrade*0.1);
+
+    cout<<"Nombre del alumno: "<<studentName<<endl;
+    cout<<"Nota final: "<<finalGrade<<endl;
+
+    //Nota: el rango de las notas tiene que ir entre 1.0 y 5.0.
+    //Nota: tengo errores al momento de digitar las notas.
 }
 
 void thirdPoint(){
