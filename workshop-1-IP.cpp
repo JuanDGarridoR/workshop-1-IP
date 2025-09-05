@@ -55,8 +55,6 @@ int main(){
 }
 
 void firstPoint(){
-    /*Statement: write a program that reads three grades from a student and
-    calculates that student's final grade.*/
         
     double gradeOne=0.0, gradeTwo=0.0, gradeThree=0.0, finalGrade=0.0;
         
@@ -79,13 +77,6 @@ void firstPoint(){
 }
     
 void secondPoint(){
-    /*Statement: a student's final grade is the weighted average of three grades: the 
-    practical grade, which accounts for 30% of the total, the theoretical 
-    grade, which accounts for 60%, and the participation grade, which accounts
-    for the remaining 10%. Write a program that reads a student's three grades 
-    from the standard input and writes their final grade as output. 
-    The screen should indicate which grade to enter (practical, theoretical, 
-    and participation) and display the student's name and final grade.*/
     
     string studentName="";
     double practicalGrade=0.0, theoricalGrade=0.0, participationGrade=0.0, finalGrade=0.0;
@@ -115,9 +106,6 @@ void secondPoint(){
 }
     
 void thirdPoint(){
-    /*Statement: write a program that reads the two legs of a right
-    triangle from standard input and writes its 
-    hypotenuse to standard output.*/
     
     double firstLeg=0.0, secondLeg=0.0, hypotenuse=0.0;
 
@@ -138,10 +126,6 @@ void thirdPoint(){
 }
     
 void fourthPoint(){
-    /*Statement: a calculator needs to be implemented with the following operations: addition, 
-    subtraction, division, multiplication, exponentiation, and root. For each 
-    arithmetic operation, the program must request two integers. It should be 
-    noted that the square root requests only one integer.*/
 
     int calculatorOption=-1;
     int firstAddend=0, secondAddend=0;
