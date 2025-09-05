@@ -47,3 +47,7 @@ The program displays a main menu with **4 points**, each corresponding to a diff
    ```bash
    workshop-1-IP.exe
    ```
+
+## Considerations
+
+Make sure you have a C++ compiller installed.
