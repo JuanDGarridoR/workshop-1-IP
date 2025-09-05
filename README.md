@@ -23,7 +23,7 @@ The program displays a main menu with **4 points**, each corresponding to a diff
 
 3. **Point 3**  
    - Reads the two legs of a right triangle.  
-   - Calculates the hypotenuse using the **Pythagorean theorem**.  
+   - Calculates the hypotenuse using the pythagorean theorem.  
    - Validates that the legs are greater than 0.
 
 4. **Point 4**  
@@ -33,12 +33,12 @@ The program displays a main menu with **4 points**, each corresponding to a diff
    - Multiplication  
    - Division  
    - Exponentiation  
-   - Square root  
+   - Root
 
-   ⚠️ Note: The square root operation only requests one value (radicand).
+## How to Run
 
-## ▶️ How to Run
-
-### 1. Compile the program
+### 1. Download it
+### 2. In the terminal put the following commands to compile and run
 ```bash
-g++ main.cpp -o workshop-1-IP
+g++ workshop-1-IP.cpp -o workshop-1-IP
+workshop-1-IP.exe
