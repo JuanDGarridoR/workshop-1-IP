@@ -35,7 +35,7 @@ A program that reads the two legs of a right triangle from standard input and wr
    - Calculates the hypotenuse using the pythagorean theorem.  
    - Validates that the legs are greater than 0.
 
-6. **Point 4**
+4. **Point 4**
 
 A calculator needs to be implemented with the following operations: addition, subtraction, division, multiplication, exponentiation, and root. For each arithmetic operation, the program must request two integers. It should be noted that the square root requests only one integer.
 
