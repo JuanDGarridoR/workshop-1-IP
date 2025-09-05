@@ -42,7 +42,8 @@ A calculator needs to be implemented with the following operations: addition, su
 ## How to Run
 
 1. **Download it**
-2. **In the terminal put the following commands**
+2. **Find the downloads folder (or the folder where you saved it) in the terminal.**
+3. **Enter the following commands**
    - Compile:
       ```bash
       g++ workshop-1-IP.cpp -o workshop-1-IP
