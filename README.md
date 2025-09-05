@@ -37,8 +37,13 @@ The program displays a main menu with **4 points**, each corresponding to a diff
 
 ## How to Run
 
-### 1. Download it
-### 2. In the terminal put the following commands to compile and run
+1. **Download it**
+2. **In the terminal put the following commands**
+   - Compile:
 ```bash
 g++ workshop-1-IP.cpp -o workshop-1-IP
+```
+   - Run it:
+```bash
 workshop-1-IP.exe
+```
