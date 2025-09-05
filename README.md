@@ -1,45 +1,44 @@
-# Taller #1 - Introducción a la Programación (C++)
+# Workshop #1 - Introduction to Programming
 
-Este proyecto implementa un programa en C++ que resuelve varios ejercicios básicos de introducción a la programación.  
-Incluye manejo de estructuras de control, validación de datos, operaciones matemáticas y uso de funciones.
+This project implements a C++ program that solves basic programming exercises.
 
-## 📋 Descripción del Programa
+## Description
 
-El programa muestra un menú principal con **4 puntos**, cada uno correspondiente a un ejercicio diferente:
+The program displays a main menu with **4 points**, each corresponding to a different exercise:
 
-1. **Punto 1 - Cálculo de nota final (promedio simple)**  
-   - Lee tres notas ingresadas por el estudiante.  
-   - Calcula y muestra el promedio final.  
-   - Valida que las notas estén dentro del rango [0.0 – 5.0].
+1. **Point 1**  
+   - Reads three student grades.  
+   - Calculates and displays the final average.  
+   - Validates that grades are within the range [0.0 – 5.0].
 
-2. **Punto 2 - Cálculo de nota final (ponderada)**  
-   - Solicita el nombre del estudiante.  
-   - Lee tres notas:  
-     - Práctica → 30%  
-     - Teórica → 60%  
-     - Participación → 10%  
-   - Calcula la nota final ponderada.  
-   - Muestra el nombre del estudiante y su nota final.  
-   - Valida el rango de notas [0.0 – 5.0].
+2. **Point 2**  
+   - Requests the student’s name.  
+   - Reads three grades:  
+     - Practical → 30%  
+     - Theoretical → 60%  
+     - Participation → 10%  
+   - Calculates the weighted final grade.  
+   - Displays the student’s name and final grade.  
+   - Validates the grade range [0.0 – 5.0].
 
-3. **Punto 3 - Hipotenusa de un triángulo rectángulo**  
-   - Lee los dos catetos de un triángulo rectángulo.  
-   - Calcula la hipotenusa usando el **Teorema de Pitágoras**.  
-   - Valida que los catetos sean mayores que 0.
+3. **Point 3**  
+   - Reads the two legs of a right triangle.  
+   - Calculates the hypotenuse using the **Pythagorean theorem**.  
+   - Validates that the legs are greater than 0.
 
-4. **Punto 4 - Calculadora básica**  
-   Implementa una calculadora con las siguientes operaciones:  
-   - Suma  
-   - Resta  
-   - Multiplicación  
-   - División  
-   - Potencia  
-   - Raíz cuadrada  
+4. **Point 4**  
+   Implements a calculator with the following operations:  
+   - Addition  
+   - Subtraction  
+   - Multiplication  
+   - Division  
+   - Exponentiation  
+   - Square root  
 
-   ⚠️ Nota: La raíz cuadrada solo solicita un valor (radicando).
+   ⚠️ Note: The square root operation only requests one value (radicand).
 
-## ▶️ Ejecución
+## ▶️ How to Run
 
-### 1. Compilar el programa
+### 1. Compile the program
 ```bash
-g++ main.cpp -o taller1
+g++ main.cpp -o workshop-1-IP
